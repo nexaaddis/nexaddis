@@ -54,7 +54,7 @@ const WebsiteDesignPage = () => {
           color: "#e1e2e2",
           textAlign: "center",
           px: 2,
-          pt: { xs: "5rem", md: "6rem" },
+          // pt: { xs: "5rem", md: "6rem" },
         }}
       >
         <Box
