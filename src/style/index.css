@@ -163,7 +163,6 @@ a {
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 50px #fff inset;
-  /* Change the color to your own background color */
   box-shadow: transparent;
   -webkit-text-fill-color: #1c2229 !important;
 }
@@ -172,7 +171,7 @@ body {
   background: #fff;
   padding: 0 !important;
   color: #0B093B;
-  font-family: 'Khula', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   font-size: 16px;
   font-weight: 400;

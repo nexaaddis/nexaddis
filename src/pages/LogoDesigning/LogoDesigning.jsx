@@ -24,7 +24,7 @@ const LogoDesignPage = () => {
       <Box
         sx={{
           position: "relative",
-          height: { xs: "90vh", md: "75vh" },
+          height: { xs: "100vh", md: "75vh" },
           backgroundImage: `url(${logoBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

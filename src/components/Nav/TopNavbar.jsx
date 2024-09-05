@@ -8,7 +8,7 @@ import BurgerIcon from "../../assets/svg/BurgerIcon";
 import { useNavigate } from "react-router-dom";
 
 // assets
-import { logo, mainLogo } from "../../assets";
+import { mainLogo } from "../../assets";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);

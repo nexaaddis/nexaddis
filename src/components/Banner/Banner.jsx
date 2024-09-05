@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
 import LeftBanner from './LeftBanner';
-import RightBanner from './RightBanner';
-import ClientSlider from '../Elements/ClientSlider';
 import { bg1 } from '../../assets';
 
 const Banner = () => {
   return (
-    <div id="home" style={{ position: 'relative' }}>
+    <div id="home" style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <Box
         sx={{
           position: 'absolute',
@@ -16,7 +14,8 @@ const Banner = () => {
           width: '100%',
           height: '100%',
           background: `url(${bg1}) no-repeat center center/cover`,
-          filter: 'brightness(0.5)',
+          filter: 'brightness(0.6)',
+          margin: 0,
           zIndex: -1,
         }}
       />
@@ -31,9 +30,10 @@ const Banner = () => {
             flexDirection: { xs: 'column', lg: 'row' },
             gap: { xs: 2, lg: 0 },
             alignItems: 'center',
-            borderBottom: '1px solid',
             fontFamily: 'titleFont',
             overflow: 'hidden',
+            position: 'relative',
+            zIndex: 1,
           }}
         >
           <Box
@@ -41,20 +41,16 @@ const Banner = () => {
               display: 'flex',
               flexDirection: { xs: 'column', lg: 'row' },
               position: 'relative',
-              zIndex: 1,
-              display: 'flex',
+              zIndex: 2,
               width: '100%',
               height: '100%',
             }}
           >
             <LeftBanner />
-            {/* <RightBanner /> */}
           </Box>
         </Box>
       </Container>
     </div>
-
-
   );
 };
 

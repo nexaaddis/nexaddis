@@ -30,8 +30,7 @@ const LeftBanner = () => {
         padding: { xs: 2, md: 4 },
         color: 'var(--text-color)',
         textAlign: 'center',
-        mt: { xs: 6, md: 4 },
-        fontFamily: 'Arial, sans-serif',
+        mt: { xs: 7, md: 2 },
       }}
     >
       <Typography
@@ -51,14 +50,14 @@ const LeftBanner = () => {
         variant="h3"
         sx={{
           fontWeight: '800',
-          fontSize: { xs: '1.5rem', sm: '2.2rem', md: '2.8rem', lg: '3.2rem' },
-          color: '#f1f1f1',
+          fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem', lg: '3.1rem' },
+          color: '#e1e2e2',
           lineHeight: 1.2,
           fontFamily: 'Roboto, sans-serif',
           position: 'relative',
         }}
       >
-        Boosting Business with Digital Innovation
+        Boosting Your Business<br></br>with Digital Innovation<span color="var(--text-muted-color)"></span>
       </Typography>
 
       <Box
@@ -70,6 +69,7 @@ const LeftBanner = () => {
           whiteSpace: 'nowrap',
           width: '100%',
           maxWidth: '100%',
+          mt: 2,
         }}
       >
         <Typography
@@ -98,9 +98,9 @@ const LeftBanner = () => {
           fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem', lg: '1.1rem' },
           color: 'var(--text-subtitle-color)',
           lineHeight: 1.6,
-          maxWidth: '400px',
+          maxWidth: '600px',
           textAlign: 'center',
-          mt: '2rem',
+          mt: {xs: '2rem', md: '1rem'},
           fontFamily: 'Verdana, sans-serif',
         }}
       >
@@ -116,7 +116,7 @@ const LeftBanner = () => {
           fontWeight: "600",
           px: {xs: "1rem", md: "1.5rem"},
           py: {xs: "0.5rem", md: "0.65rem"},
-          mt: {xs: "2rem", md: "3rem"},
+          mt: {xs: "2rem", md: "1rem"},
           backgroundColor: "var(--primary-color)",
           color: "white",
           "&:hover": {

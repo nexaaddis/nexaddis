@@ -44,7 +44,7 @@ const WebsiteDesignPage = () => {
       <Box
         sx={{
           position: "relative",
-          height: { xs: "90vh", md: "75vh" },
+          height: { xs: "100vh", md: "75vh" },
           backgroundImage: `url(${webBg1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -303,7 +303,7 @@ const WebsiteDesignPage = () => {
             Visual Examples of Our Work
           </Typography>
 
-          <Box style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          <Box style={{ display: 'flex', gap: '30px', flexWrap: 'wrap' }}>
             {cardData.map((card, index) => (
               <Card key={index} sx={{ maxWidth: 345, position: 'relative' }}>
                 <CardMedia

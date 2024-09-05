@@ -17,7 +17,7 @@ const MobileAppDesigning = () => {
       <Box
         sx={{
           position: "relative",
-          height: { xs: "90vh", md: "75vh" },
+          height: { xs: "100vh", md: "75vh" },
           backgroundImage: `url(${mobileBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
