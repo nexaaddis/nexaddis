@@ -30,7 +30,6 @@ const LeftBanner = () => {
         padding: { xs: 2, md: 4 },
         color: 'var(--text-color)',
         textAlign: 'center',
-        mt: { xs: 7, md: 2 },
       }}
     >
       <Typography
@@ -49,10 +48,10 @@ const LeftBanner = () => {
       <Typography
         variant="h3"
         sx={{
-          fontWeight: '800',
-          fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem', lg: '3.1rem' },
-          color: '#e1e2e2',
-          lineHeight: 1.2,
+          fontWeight: '900',
+          fontSize: { xs: '1.6rem', sm: '2rem', md: '2.8rem', lg: '3.1rem' },
+          color: '#dfdfdf',
+          lineHeight: 1.5,
           fontFamily: 'Roboto, sans-serif',
           position: 'relative',
         }}

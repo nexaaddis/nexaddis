@@ -36,8 +36,8 @@ const LogoWrapper = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   padding: '0 10px',
-  width: '100px',
-  height: '60px',
+  width: '110px',
+  height: '70px',
   transition: 'transform 0.3s ease-in-out',
   cursor: 'pointer',
   [theme.breakpoints.down('md')]: {

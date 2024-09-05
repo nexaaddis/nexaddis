@@ -18,7 +18,7 @@ export default function Services() {
           left: 0,
           width: '100%',
           height: '100%',
-          bgcolor: '#f5f5f5',
+          bgcolor: '#f3f3f3',
           zIndex: -1,
         }}
       />
