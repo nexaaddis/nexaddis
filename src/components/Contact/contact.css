@@ -1,0 +1,15 @@
+.MuiInputBase-root {
+  /* background-color: rgba(255, 255, 255, 0.1) !important; */
+  height: "80px !important";
+}
+
+
+/* ALERT STYLE */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  margin: -5px 0 !important;
+  padding: 0 !important;
+}
+
+.MuiAlert-icon.css-1ytlwq5-MuiAlert-icon {
+  margin-right: 5px !important;
+}
