@@ -1,14 +1,12 @@
-const webpack = require('webpack');
-const dotenv = require('dotenv');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-dotenv.config();
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
+  mode: 'development', // or 'production' based on your needs
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   module: {
@@ -16,37 +14,38 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: [require.resolve('react-refresh/babel')].filter(Boolean),
+          },
+        },
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
       },
     ],
-  },
-  resolve: {
-    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env),
-    }),
+    new ReactRefreshWebpackPlugin(),
   ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    historyApiFallback: true,
-    compress: true,
-    port: 3000,
-    open: true,
-    hot: true,
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    hot: true, // Enable Hot Module Replacement
+    port: 3000,
+  },
+  devtool: 'source-map', // Enables source map generation
 };

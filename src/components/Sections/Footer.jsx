@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Box, Container, Typography, Grid, Divider, IconButton } from "@mui/material";
 import { HashLink as Link } from "react-router-hash-link";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 // Assets
 import { mainLogo } from "../../assets";
@@ -243,19 +246,49 @@ export default function Contact() {
 
           {/* Find Us */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold", fontSize: { xs: "1rem", sm: "1.2rem" } }}>
+            <Typography
+              variant="h6"
+              sx={{ mb: 1, fontWeight: 'bold', fontSize: { xs: '1rem', sm: '1.2rem' } }}
+            >
               Find Us
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <PhoneIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
               Phone: (+251) 953-431-572
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
-              Email: nexaddis@gmail.com
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <EmailIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
+              Email: nexaddis0@gmail.com
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <LocationOnIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
               Address: Addis Ababa, Ethiopia
             </Typography>
-          </Grid>
+          </Grid>;
         </Grid>
 
         <Divider sx={{ my: 4, borderColor: "grey.800" }} />
