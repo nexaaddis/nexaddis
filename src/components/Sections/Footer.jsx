@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Box, Container, Typography, Grid, Divider, IconButton } from "@mui/material";
 import { HashLink as Link } from "react-router-hash-link";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 // Assets
 import { mainLogo } from "../../assets";
@@ -59,6 +62,8 @@ export default function Contact() {
                 alignItems: "center",
                 textDecoration: "none",
                 color: "white",
+                marginBottom: "1.1rem",
+                marginTop: ".4rem",
               }}
             >
               <Box
@@ -66,12 +71,36 @@ export default function Contact() {
                 src={mainLogo}
                 alt="Nexaddis"
                 sx={{
-                  width: { xs: "100px", md: "120px" },
+                  width: { xs: "80px", sm: "100px", md: "120px" },
                   height: "auto",
                   filter: "invert(1)",
+                  transition: "transform 0.3s ease",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               />
             </Link>
+            <Typography
+              variant="body2"
+              sx={{
+                mt: 2,
+                color: "white",
+                fontSize: { xs: "0.75rem", sm: "0.875rem", md: ".9rem" },
+              }}
+            >
+              Empowering businesses with innovative digital solutions.
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                mt: 1,
+                color: "white",
+                fontSize: { xs: "0.625rem", sm: "0.75rem", md: "0.875rem" },
+              }}
+            >
+              Contact us to elevate your digital presence.
+            </Typography>
           </Grid>
 
           {/* Company Links */}
@@ -243,16 +272,46 @@ export default function Contact() {
 
           {/* Find Us */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold", fontSize: { xs: "1rem", sm: "1.2rem" } }}>
+            <Typography
+              variant="h6"
+              sx={{ mb: 1, fontWeight: 'bold', fontSize: { xs: '1rem', sm: '1.2rem' } }}
+            >
               Find Us
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <PhoneIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
               Phone: (+251) 953-431-572
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <EmailIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
               Email: nexaddis@gmail.com
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontSize: { xs: "0.875rem", sm: ".8rem" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 1,
+                fontSize: { xs: '0.875rem', sm: '.8rem' },
+              }}
+            >
+              <LocationOnIcon sx={{ mr: 1, fontSize: '1rem', color: '#fb8122' }} />
               Address: Addis Ababa, Ethiopia
             </Typography>
           </Grid>
