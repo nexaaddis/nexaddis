@@ -3,7 +3,7 @@
   --secondary-color: #1c2229;
   --primary-color: #fb8122;
   --accent-color: #e1e2e2;
-  color: #dfdfdf;
+  color: #ff6f00;
 
   /* Background Colors */
   --bg-color: var(--secondary-color);
@@ -522,9 +522,7 @@ body {
 
 /* Blur Bg */
 .blurry-bg-navbar {
-  background-color: rgba(255, 255, 255, 0.603);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 2px 4px rgba(21, 21, 21, 0.1);
-  transition: backdrop-filter 0.3s, background-color 0.3s;
+  backdrop-filter: blur(20px);
 }

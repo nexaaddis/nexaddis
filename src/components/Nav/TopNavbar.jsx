@@ -71,8 +71,8 @@ export default function TopNavbar() {
                 color: '#ffffff',
                 textTransform: 'capitalize',
                 "&:hover": {
-                  backgroundColor: 'transparent',
-                  color: '#fb8122',
+                  backgroundColor: '#ca6314',
+                  color: '#fff',
                 },
               }}
               onClick={() => navigate('/contact')}
