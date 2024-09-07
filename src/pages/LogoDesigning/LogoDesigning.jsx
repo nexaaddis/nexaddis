@@ -223,8 +223,10 @@ const LogoDesignPage = () => {
                       size="small"
                       endIcon={<ArrowForwardIcon />}
                       sx={{ color: "#fb8122", opacity: 0, transition: "opacity 0.3s" }}
+                      component={HashLink}
+                      smooth to="/#projects"
                     >
-                      View Recent Works
+                      Show Recent Works
                     </Button>
                   </Box>
                 </Box>

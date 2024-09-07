@@ -4,16 +4,14 @@ import { ArrowForward } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 // assets
-import designerPen from "../../assets/svg/Services/designerPen.svg";
-import mobile from "../../assets/svg/Services/mobile.svg";
-import website from "../../assets/svg/Services/website.svg";
+import { website, mobile, designing } from "../../assets";
 
 export default function ServiceBox({ route, icon, title, subtitle }) {
   let getIcon;
 
   switch (icon) {
     case "roller":
-      getIcon = <img src={designerPen} alt="Roller Icon" style={{ width: '100%', height: 'auto' }} />;
+      getIcon = <img src={designing} alt="Roller Icon" style={{ width: '100%', height: 'auto' }} />;
       break;
     case "monitor":
       getIcon = <img src={website} alt="Monitor Icon" style={{ width: '100%', height: 'auto' }} />;
@@ -33,7 +31,7 @@ export default function ServiceBox({ route, icon, title, subtitle }) {
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
-        backgroundColor: '#f8f8f8',
+        backgroundColor: '#fff',
         borderRadius: 2,
         p: 2.5,
         mt: 2.5,

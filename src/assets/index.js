@@ -65,6 +65,11 @@ import shop from './img/projects/shop.png';
 import health from './img/projects/health.png';
 import prodac from './img/projects/prodac.png';
 
+// Services images
+import website from './img/Services/website.gif';
+import mobile from './img/Services/mobile.gif';
+import designing from './img/Services/designing.gif';
+
 // Web card URLs
 const webCard1 = "https://cdn.dribbble.com/users/907791/screenshots/4411178/shopology.png";
 const webCard2 = "https://themewagon.com/wp-content/uploads/2021/10/feane-1.png";
@@ -102,6 +107,11 @@ export {
   shop,
   health,
   prodac,
+
+  // Services images
+  website,
+  mobile,
+  designing,
 
   // Work images
   workImgTwo,

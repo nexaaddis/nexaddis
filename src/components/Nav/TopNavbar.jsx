@@ -26,7 +26,7 @@ export default function TopNavbar() {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate lightBg" style={y > 100 ? { height: "62px" } : { height: "72px" }}>
+      <Wrapper className="flexCenter animate blurry-bg-navbar" style={y > 100 ? { height: "62px" } : { height: "72px" }}>
         <NavInner className="container flexSpaceCenter">
           <LinkWrapper to="/#home" smooth onClick={() => navigate('/#home')}>
             <Box
