@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Slider from 'react-slick';
-import { Box, Typography, Container, useTheme } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 import { styled } from '@mui/system';
 import {
   git,
@@ -64,8 +64,6 @@ const ImgStyle = styled('img')({
 // Main Component
 export default function ClientSlider() {
   const sliderRef = useRef(null);
-  const theme = useTheme();
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   const settings = {
     infinite: true,
@@ -105,7 +103,6 @@ export default function ClientSlider() {
     let lastScrollTop = 0;
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrollPosition(scrollTop);
 
       if (sliderRef.current) {
         if (scrollTop > lastScrollTop) {

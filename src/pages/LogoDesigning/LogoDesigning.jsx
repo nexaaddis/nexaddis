@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Typography, Box, Grid, Button, Divider } from "@mui/material";
 import Footer from "../../components/Sections/Footer";
 import Contact from "../../components/Contact/Contact";
-import { HashLink as HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import {
