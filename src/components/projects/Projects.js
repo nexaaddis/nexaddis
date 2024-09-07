@@ -2,21 +2,22 @@ import React, { useState } from "react";
 import { Grid, Container, Typography, Box, Button } from "@mui/material";
 import ProjectsCard from "./ProjectsCard";
 import {
-  workImgTwo,
   workImgFour,
-  workImgFive,
-  workImgSix,
-  workImgSeven,
+  restaurant,
+  TicTacToe,
+  shop,
+  health,
+  prodac,
 } from "../../assets";
 
 // Array of project data
 const projectsData = [
-  { title: "Blog Website", category: "Website", image: workImgTwo },
-  { title: "Business Card Design", category: "Design", image: workImgSeven },
-  { title: "Infinity Logo", category: "Logo", image: workImgTwo },
-  { title: "Mobile Application", category: "Shopping", image: workImgFive },
-  { title: "Responsive Website", category: "E-commerce", image: workImgFour },
-  { title: "Graphic Design", category: "Design", image: workImgSix },
+  { title: "Geretcht", category: "Restaurant", image: restaurant, url: "https://gericht-green.vercel.app/" },
+  { title: "Tic Tac Toe", category: "Game", image: TicTacToe, url: "https://tictactoe-production-f0a0.up.railway.app" },
+  { title: "DocStream", category: "Healthcare", image: health, url: "https://docstream-frontend.onrender.com/" },
+  { title: "Mobile Application", category: "Shopping", image: shop, url: "https://forever-ecom.vercel.app/" },
+  { title: "Prodac", category: "Car Seller", image: prodac, url: "https://prodac.vercel.app/" },
+  { title: "Graphic Design", category: "Design", image: workImgFour, url: "http://handyman" },
 ];
 
 const Projects = () => {
@@ -83,6 +84,7 @@ const Projects = () => {
                 title={project.title}
                 category={project.category}
                 image={project.image}
+                url={project.url}
               />
             </Grid>
           ))}

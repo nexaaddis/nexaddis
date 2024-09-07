@@ -58,6 +58,13 @@ import logoCard3 from './img/logDesign/logoCard3.jpg';
 import logoBg from './img/logDesign/logoBg.jpg';
 import logoSvg from './img/logDesign/logoSvg.svg';
 
+// Projects Screenshots
+import restaurant from './img/projects/restaurant.png';
+import TicTacToe from './img/projects/TicTacToe.png';
+import shop from './img/projects/shop.png';
+import health from './img/projects/health.png';
+import prodac from './img/projects/prodac.png';
+
 // Web card URLs
 const webCard1 = "https://cdn.dribbble.com/users/907791/screenshots/4411178/shopology.png";
 const webCard2 = "https://themewagon.com/wp-content/uploads/2021/10/feane-1.png";
@@ -88,6 +95,13 @@ export {
   // Mobile Dev
   mobileAppBg,
   mobileBg,
+
+  // Projects screenshots
+  restaurant,
+  TicTacToe,
+  shop,
+  health,
+  prodac,
 
   // Work images
   workImgTwo,
