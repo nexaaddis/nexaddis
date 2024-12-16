@@ -6,10 +6,6 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-// Assets
-import { mainLogo } from "../../assets";
-
-
 export default function Contact() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
@@ -68,12 +64,11 @@ export default function Contact() {
             >
               <Box
                 component="img"
-                src={mainLogo}
+                src={'/assets/logoWhite.svg'}
                 alt="Nexaddis"
                 sx={{
                   width: { xs: "80px", sm: "100px", md: "120px" },
                   height: "auto",
-                  filter: "invert(1)",
                   transition: "transform 0.3s ease",
                   "&:hover": {
                     transform: "scale(1.05)",

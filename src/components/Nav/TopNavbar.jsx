@@ -7,9 +7,6 @@ import Backdrop from "../Elements/Backdrop";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import { useNavigate } from "react-router-dom";
 
-// assets
-import { mainLogo } from "../../assets";
-
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
@@ -26,12 +23,12 @@ export default function TopNavbar() {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate blurry-bg-navbar" style={y > 100 ? { height: "62px" } : { height: "72px" }}>
+      <Wrapper className="flexCenter animate" style={y > 100 ? { height: "62px" } : { height: "72px" }}>
         <NavInner className="container flexSpaceCenter">
           <LinkWrapper to="/#home" smooth onClick={() => navigate('/#home')}>
             <Box
               component="img"
-              src={mainLogo}
+              src={'/assets/logoBlack.svg'}
               alt="Nexaddis"
               sx={{
                 width: { xs: "100px", md: "120px" },
@@ -92,6 +89,7 @@ const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+  background-color:rgb(244, 244, 244);
   z-index: 10000;
 `;
 

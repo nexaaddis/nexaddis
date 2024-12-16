@@ -32,10 +32,6 @@ import websiteBG from './img/webDev/websiteBG.png';
 import mobileAppBg from './img/mobileDev/mobileAppBg.svg';
 import mobileBg from './img/mobileDev/mobileBg.jpg';
 
-// Logos
-import mainLogo from './img/logo/mainLogo.png';
-import logoBlack from './img/logo/logoBlack.svg';
-
 // Slider logos
 import git from './img/developer-icons/git.svg';
 import mui from './img/developer-icons/mui.svg';
@@ -151,8 +147,4 @@ export {
 
   // Website images
   websiteBG,
-
-  // Logos
-  mainLogo,
-  logoBlack,
 };

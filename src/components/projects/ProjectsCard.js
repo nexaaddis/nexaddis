@@ -35,7 +35,7 @@ const ProjectsCard = ({ image, title, category, url }) => {
           image={image}
           sx={{
             height: '100%',
-            objectFit: 'cover',
+            objectFit: 'contain',
             width: '100%',
           }}
         />
@@ -52,17 +52,18 @@ const ProjectsCard = ({ image, title, category, url }) => {
           <IconButton
             component="a"
             href={url}
+            target="_blank"
             sx={{
               color: '#fb8122',
               transition: 'all 0.3s ease-in-out',
               '&:hover': {
                 color: '#ff6347',
                 transform: 'scale(1.1)',
-                backgroundColor: 'rgba(255, 99, 71, 0.2)', // light background color on hover
-                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)' // adding shadow effect
+                backgroundColor: 'rgba(255, 99, 71, 0.2)',
+                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)'
               },
-              borderRadius: '50%', // optional: to ensure the button remains circular
-              padding: 1, // optional: adjust padding if needed
+              borderRadius: '50%',
+              padding: 1,
             }}
             aria-label="Live Preview"
           >

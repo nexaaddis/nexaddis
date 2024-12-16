@@ -3,9 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
-// assets
-import { mainLogo } from "../../assets";
-
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   const navigate = useNavigate();
 
@@ -52,12 +49,11 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       >
         <Box
           component="img"
-          src={mainLogo}
+          src={'/assets/logoWhite.svg'}
           alt="Nexaddis photo"
           sx={{
             width: { xs: "100px", md: "120px" },
             height: "auto",
-            filter: "invert(1)",
           }}
         />
         <IconButton

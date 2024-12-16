@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Grid, Container, Typography, Box, Button } from "@mui/material";
 import ProjectsCard from "./ProjectsCard";
 import {
-  workImgFour,
-  restaurant,
-  TicTacToe,
   shop,
   health,
   prodac,
@@ -12,12 +9,12 @@ import {
 
 // Array of project data
 const projectsData = [
-  { title: "Geretcht", category: "Restaurant", image: restaurant, url: "https://gericht-green.vercel.app/" },
-  { title: "Tic Tac Toe", category: "Game", image: TicTacToe, url: "https://tictactoe-production-f0a0.up.railway.app" },
-  { title: "DocStream", category: "Healthcare", image: health, url: "https://docstream-frontend.onrender.com/" },
-  { title: "Mobile Application", category: "Shopping", image: shop, url: "https://forever-ecom.vercel.app/" },
-  { title: "Prodac", category: "Car Seller", image: prodac, url: "https://prodac.vercel.app/" },
-  { title: "Graphic Design", category: "Design", image: workImgFour, url: "http://handyman" },
+  { title: "Green Cycle", category: "E-Commerce website", image: '/assets/projects/greenCycle.png', url: "https://online-shop-three-weld.vercel.app/" },
+  { title: "Rent Easy", category: "Web application", image: '/assets/projects/rentEasy.jpg', url: "https://rent-ease-iota.vercel.app/" },
+  { title: "DocStream", category: "Web application", image: health, url: "https://docstream-frontend.onrender.com/" },
+  { title: "Forever Shop", category: "Shopping", image: shop, url: "https://forever-ecom.vercel.app/" },
+  { title: "Prodac", category: "Website", image: prodac, url: "https://prodac.vercel.app/" },
+  { title: "Admin Dashboard", category: "Dashboard", image: '/assets/projects/dashboard.png', url: "https://online-shop-indol-three.vercel.app" },
 ];
 
 const Projects = () => {
